@@ -30,10 +30,7 @@ overlay.addEventListener('click', closeOverlay);
 document.addEventListener('keydown', function (e) {
   console.log(e.key);
 
-  if (
-    e.key === 'Escape' ||
-    (e.key === 'Escape' && !modal.classList.contains('hidden'))
-  ) {
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
     closeModal();
   }
 });
